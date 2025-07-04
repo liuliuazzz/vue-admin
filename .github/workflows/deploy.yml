@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # 如果你主分支是 master，请改成 master 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
+      - master  # 如果你主分支是 master，请改成 master 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -28,5 +28,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: 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
           publish_dir: ./dist
